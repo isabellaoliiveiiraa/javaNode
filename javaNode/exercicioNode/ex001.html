@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//Exercício 1: Calculadora de Soma
+let n1 = prompt('digite o primeiro numero')
+let n2 = prompt('digite o segundo numero')
+n1 = parseFloat(n1) 
+n2 = parseFloat(n2)
+soma = n1 + n2
+alert('a soma de ' + n1 + 'e ' + n2 + 'é igual a ' + soma)
+
+
+//Exercício 2: Calculadora de Idade
+let anonasc =  prompt('digite o ano que vc nasceu')
+let anoatual = prompt('digite o ano atual')
+anonasc = parseFloat(anonasc)
+anoatual = parseFloat(anoatual)
+subtracao = anoatual - anonasc
+alert('a sua idade é ' + subtracao)
+
+//Exercício 3: Calculadora de Diferença
+let temperatura = prompt('qual a temperatura que vai ser convertida?')
+temperatura = parseFloat(temperatura)
+convertido = temperatura  * 9/5 + 32
+alert('a temperatura ' + temperatura + ' convertida para  Fahrenheit é ' + convertido)
+
+//Exercício 5: Cadastro de Produto e Cálculo de Valor Total
+let produto = prompt('diga o nome do produto')
+let quantidade = prompt('quantidade desejada')
+let valoruni = prompt('qual o valor unitario?')
+let total = Number(quantidade) * Number(valoruni)
+let multiplicar = quantidade * valoruni
+alert('Você comprou ' + quantidade + 'unidades de ' + produto + 'por R$ ' + valoruni + ' totalizando R$ ' + multiplicar )
+
+//Exercício 6: Calculadora de Desconto
+
+
+</script>
+</html>
+
+//!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="corpo">
+    <h1 id="titulo">Olá, Mundo!</h1>
+    <script>
+        nome = prompt('qual seu nome')
+        document.getElementById("titulo").innerText = "Bem-vindo!";
+        // pegue o elemento pelo seu id: getElementById
+        document.getElementById('corpo')[0].innerHTML += '<h2> oi </h2>'
+
+        
+    </script>
+</body>
+
+</html>
+
+

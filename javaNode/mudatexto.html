@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    
+<h2 id="mensagem">Clique no botão para mudar esta mensagem!</h2>
+<button id="mudaMensagem">Mudar Mensagem</button>
+<button id="m2">resetar</button>
+
+
+    <script>
+        
+const mensagem = document.getElementById("mensagem");
+const mudaMensagem = document.getElementById("mudaMensagem");
+const m2 = document.getElementById("m2")
+
+mudaMensagem.addEventListener("click", () => {
+    mensagem.innerText += "Mensagem alterada com sucesso!";
+});
+
+//segundo botao
+//const m2 = document.getElementById("click")
+m2.addEventListener("click", () =>  {
+  window.location.reload()
+})
+
+    </script>
+</body>
+</html>
